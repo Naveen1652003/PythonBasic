@@ -1,0 +1,170 @@
+
+Python Basic interview methods
+
+
+
+
+
+l=['apple','bannana','orange','tamarind']
+dict={}
+for i in l:
+    dict[i[0]]=len(i)
+print(dict)
+
+list1=['a','b','c','d']
+list2=[1,2,3,4]
+dict={}
+for i,j in zip(list1,list2):
+    dict[i]=j
+print(dict)
+print(dict.get('a'))
+
+
+s='i am a naveen kumar'
+l=s.lower()
+count=0
+list=['a','e','i','o','u']
+for i in l:
+    if i in list:
+        count=count+1
+print(count)
+s='hello'
+r=''
+for i in s:
+    r=i+r
+print(r)
+
+from itertools import zip_longest
+list1=['a','b','c','d','e','g']
+list2=[1,2,3,4]
+dict={}
+for i,j in  zip_longest(list1,list2,fillvalue='0'):
+    dict[i]=j
+print(dict)
+
+
+list=[1,2,3,4,5,6,7,8,9,10]
+dict={}
+for i in list:
+    if i%2==0:
+        dict[i]=i**2
+    else:
+        dict[i]=i**3
+print(dict)
+
+s = ['rose flower', 'jasmine flower', 'apple fruit', 'grapes fruit', 'neem plant', 'orange fruit', 'money plant']
+dict={}
+
+for i in s:
+    v, k = i.split()
+    if k not in dict:
+        dict[k] = [v]
+    else:
+        dict[k].append(v)
+
+print(dict)
+
+num=int(input("Enter the number:"))
+for i in range(1,num+1):
+    for j in range(1,num-i+1):
+        print(" ",end=' ')
+    for j in range(i,0,-1):
+        print(j,end=' ')
+    for j in range(2,i+1):
+        print(j,end=' ')
+    print()'''
+
+
+
+
+
+'''n=int(input("Enter the number:"))
+
+for i in range(0,n+1):
+    for j in range(-n,n+1):
+          if(-(i)<j and j<(i)):
+               print("  ",end=' ')
+          else:
+               print('* ',end=' ')
+    print()
+
+for i in range(0,n+1):
+    for j in range(-n,n+1):
+         if(-(n-i)<j and j<(n-i)):
+              print("  ",end=' ')
+         else:
+            print("* ",end=' ')
+    print()
+s='hello world'
+res=''
+c=''
+for i in s+' ':
+    if(i!=' '):
+        c=c+i
+    else:
+       res=c+' '+res
+        c=' '
+print(res.rstrip())
+
+n=int(input("Enter the number:"))
+u=1
+b=n
+k=n//2
+for i in range(0,n):
+    for j in range(0,n):
+        if i==j:
+            print(u,end=' ')
+            u+=1
+        elif i+j==n-1 and j>=n//2:
+            print(b,end=' ')
+            b=b-1
+        elif i+j==n-1 and j<n//2:
+            print(k,end=' ')
+            k=k-1
+        else:
+             print(' ',end=' ')
+    print()
+            
+    s='NAVEEN'
+for i in range(len(s)):
+    for char in range(i+1):
+        print(s[char],end=' ')
+    print()
+
+s='hello@1234'
+c=0
+for i in s:
+    if i.isalnum()==False:
+        c=c+1
+print(c)
+m=s[::-1]
+print(m)
+
+s='hello'
+c=0
+c1=0
+for i in s:
+    if i.isalpha():
+        c+=1
+print(c)
+
+if 'A'<=i.lower()<='z':
+    c1=c1+1
+print(c1)'''
+
+s='hello@1234 world@'
+c=0
+for i in s:
+    if i.isalnum()=false
+
+
+
+
+
+
+
+    
+
+
+
+
